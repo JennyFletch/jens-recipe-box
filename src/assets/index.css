@@ -1,0 +1,103 @@
+:root {
+  --main-white: #ffffff;
+  --main-black: #000000;
+  --main-purple: #7a1846;
+  --main-green: #d7e561;
+  --main-purple-hover: #ad2363;
+}
+
+body,
+p,
+li {
+  font-family: "Century Gothic", sans;
+  font-size: 1rem;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+  max-width: 94%;
+}
+
+header {
+  height: 172px;
+  background: var(--main-white);
+  background: linear-gradient(
+    0deg,
+    var(--main-white) 50%,
+    var(--main-purple) 50%
+  );
+}
+
+header .container {
+  display: flex;
+}
+
+header #logo {
+  padding: 16px 0 0 0;
+}
+
+header #title-bar {
+  font-family: "Charmonman", cursive;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--main-white);
+  font-size: 30px;
+  padding: 30px 0px 0px 17px;
+}
+
+main h1 {
+  font-family: "Century Gothic", sans;
+  font-size: 32px;
+  color: var(--main-black);
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main h1 svg {
+  margin-left: 15px;
+}
+
+main {
+  padding-bottom: 80px;
+}
+
+main .search-box {
+  margin-bottom: 25px;
+  background-color: var(--main-green);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .search-box label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+main .search-box .custom-select {
+  width: 65%;
+}
+
+main .search-button {
+  text-align: right;
+  margin-top: 12px;
+}
+
+main .search-button button {
+  background-color: var(--main-purple);
+  border-radius: 8px;
+  color: var(--main-white);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 18px 56px;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+main .search-button button:hover {
+  background-color: var(--main-purple-hover);
+}
